@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-drc1
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0002-tenant/ci10t-776-0002-app/devfile-sample-drc1@sha256:b3d59a32895b2f53e2b6cb5737d3a565415d2f02252d93f3ac337537b1bfa4d8
+        name: my-nodejs
+        resources: {}
+status: {}
